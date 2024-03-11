@@ -1,0 +1,9 @@
+# ignorar venv
+venv/
+
+# ignorar archivos de configuración
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
