@@ -2,7 +2,7 @@ import qrcode
 import streamlit as st
 
 
-filename = "qr_codes/"
+filename = "qr_generated.png"
 
 
 def generate_qr_code(url, filename):
@@ -25,10 +25,6 @@ st.set_page_config(page_title="Generador de Códigos QR",
 st.title("Generador de Códigos QR")
 url = st.text_input("Introduce la URL que quieres convertir en un código QR")
 
-# st.set_page_config(page_title="QR Code Generator",
-#                    page_icon="🌐", layout="centered")
-# st.title("QR Code Generator")
-# url = st.text_input("Enter the URL")
 
 if st.button("Generate QR Code"):
     generate_qr_code(url, filename)
